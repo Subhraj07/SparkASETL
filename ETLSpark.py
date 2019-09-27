@@ -109,7 +109,7 @@ def load_data(df):
             driver=Config.tdriver,
             dbtable=Config.ttable,
             user=Config.tuser,
-            password=Config.tpassword).mode("append").save())
+            password=Config.tpassword).mode("overwrite").save())
     return None
 
 
